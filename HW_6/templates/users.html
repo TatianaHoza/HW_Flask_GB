@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пользователи</title>
+</head>
+<body>
+{% if user %}
+    <h2>Пользователь</h2>
+        {{ user | safe }}
+    {% else %}
+        <h1>Все пользователи</h1>
+            {{ users_table | safe }}
+    {% endif %}
+
+</body>
+</html>
